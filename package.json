@@ -1,0 +1,46 @@
+{
+  "name": "@stablefi/sdk",
+  "version": "0.1.0",
+  "description": "Node.js SDK for the StableFi AI agent commerce platform",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "stablefi",
+    "ai",
+    "agents",
+    "commerce",
+    "payments",
+    "escrow",
+    "trust"
+  ],
+  "author": "StableFi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stablefi/stablefi-sdk-node.git"
+  },
+  "homepage": "https://stablefi.ai",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.9.3"
+  }
+}
